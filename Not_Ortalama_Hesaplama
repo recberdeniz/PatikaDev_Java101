@@ -1,0 +1,30 @@
+package test;
+
+import java.util.Scanner;
+
+public class NotOrtalamasi {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Matematik notunu giriniz: ");
+		int math = input.nextInt();
+		
+		System.out.println("Fizik notunu giriniz: ");
+		int physics = input.nextInt();
+		
+		System.out.println("Turkce notunu giriniz: ");
+		int turkish = input.nextInt();
+		
+		System.out.println("Tarih notunu giriniz: ");
+		int history = input.nextInt();
+		
+		System.out.println("Muzik notunu giriniz: ");
+		int music = input.nextInt();
+		
+		double result = (math + physics + turkish + history + music) / 5;
+		
+		System.out.println("Not ortalamaniz: " + result);
+
+	}
+
+}
